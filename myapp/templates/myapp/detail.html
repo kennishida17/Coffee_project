@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="main">
+        <div class="detail">
+            <ul>
+                <li><div class="detail-store-name">Store name: {{ post.store_name }}</div></li>
+                <li><div class="detail-orderd-drink">Drinks: {{ post.ordereddrink }}</div></li>
+                <li><div class="detail-amount">Amount: ￥{{ post.amount }}-</div></li>
+            </ul>
+            <div class="deetail-return">
+                <a href="/top">Back Top</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

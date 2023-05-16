@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">Your Coffee Time
+        </div>
+        <div class="header-list">
+            <ul>
+                <a href="/overview"><li>Site Overview</li></a>
+                <a href="/contact"><li>Contact Us</li></a>
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+        <div class="footer-logo">Your Coffee Time</div>
+        <div class="footer-list">
+            <ul>
+                <a href="/overview"><li>Site Overview</li></a>
+                <a href="/contact"><li>Contact Us</li></a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

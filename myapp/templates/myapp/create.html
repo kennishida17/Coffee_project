@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="main">
+        <div class="create">
+            <div class="create-logo">
+                <h2>Add new post</h2>
+            </div>
+            <form action="/add/" method="post">
+                {% csrf_token %}
+                <div class="input_storename">
+                    <input type="text" name="store_name" placeholder="Store name">
+                </div>
+                <div class="input_ordereddrink">
+                    <input type="text" name="ordereddrink" placeholder="Ordered drink">
+                </div>
+                <div class="input_amount">
+                    <input type="number" name="amount" placeholder="Amount of money">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="POST">
+                </div>
+            </form>
+            <div class="create-return">
+                <a href="/top">Back Top</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sora:wght@600&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sora', sans-serif;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.header {
+    background-color: #454242;
+    color: #fff;
+    height: 90px;
+    padding: 20px;
+}
+
+.header-list li {
+    list-style: none;
+    color: #fff;
+    float: right;
+    padding: 20px 20px;
+}
+
+.header-logo{
+    color: #fff;
+    font-size:30px;
+    float:left;
+    padding: 20px 20px;
+}
+
+.main {
+    background-color: beige;
+    height:800px;
+    padding: 40px;
+    /* text-align: center; */
+}
+
+.main-logo {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+}
+
+.main-text {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.create {
+    text-align: center;
+}
+
+/* MAIN PAGE POST LIST */
+/* .post-list {
+    padding-top: 20px;
+} */
+
+.post-list {
+    padding-top: 50px;
+}
+.post-list li,p{
+    text-align: center;
+    list-style: none;
+}
+
+.see-more {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #454242;
+    color: #fff;
+    height: 120px;
+    padding:40px;
+}
+
+.footer-list li{
+    color: white;
+    float:right;
+    list-style: none;
+    padding:20px 20px;
+}
+
+.footer-logo {
+    float:left
+}
+
+
+/* CREATE PAGE */
+.create {
+    text-align: center;
+}
+
+.create-logo h2 {
+    font-size: 40px;
+}
+.input_storename {
+    padding: 20px 20px;
+}
+.input_amount {
+    padding: 20px 20px;
+}
+.submit {
+    padding: 20px 20px;
+}
+
+/* DEATAIL PAGE */
+.detail {
+    font-size: 25px;
+    text-align: center;
+}
+
+.detail li{
+    list-style: none;
+}
+
+.detail-store-name {
+    padding: 20px 20px;
+}
+
+.detail-orderd-drink {
+    padding: 20px 20px;
+}
+
+.detail-amount {
+    padding: 20px 20px;
+}

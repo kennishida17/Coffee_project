@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="main">
+        <div class="main-page">
+            <div class="main-logo">Your Coffee Time Page</div>
+                <div class="main-text">
+                    <p>This site allows you to keep a record of the cafes you have visited.</p>
+                    <p>Record your memories of where, with whom, and what you drank.</p>
+                </div>
+            <div class="create">
+                <h2><a href="/add">+new post</a></h2>
+            </div>
+        </div>
+        <div class="post-list">
+            <ul>
+                {% for post in posts %}
+                <div class="post-list-li">
+                    <li>
+                        <a href="/detail/{{ post.id }}">Store: {{ post.store_name }}</a>
+                    </li>
+                    <p>Data: {{ post.created_at }}</p>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="see-more">
+            <h2><a href="/add">See more</a></h2>
+        </div>
+    </div>
+{% endblock %}
