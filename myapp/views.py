@@ -7,6 +7,10 @@ def index(request):
     posts = Post.objects.all().order_by('-created_at')[:3]
     return render(request, 'myapp/index.html', {'posts':posts})
 
+def postlist(request):
+    posts = Post.objects.all().order_by('-created_at')
+    return render(request, 'myapp/postlist.html', {'posts':posts})
+
 def add(request):
     if request.method == 'POST':
         post = Post()

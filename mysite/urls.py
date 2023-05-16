@@ -6,6 +6,7 @@ urlpatterns = [
     path('top/', views.index, name='index'),
     path('overview/', views.overview, name='overview'),
     path('contact/', views.contact, name='contact'),
+    path('postlist/', views.postlist, name='postlist'),
     path('add/', views.add, name='add'),
     path('detail/<int:post_id>', views.detail, name='detail'),
     path('admin/', admin.site.urls)

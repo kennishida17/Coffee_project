@@ -17,14 +17,14 @@
                 <div class="post-list-li">
                     <li>
                         <a href="/detail/{{ post.id }}">Store: {{ post.store_name }}</a>
+                        <p>Data: {{ post.created_at }}</p>
                     </li>
-                    <p>Data: {{ post.created_at }}</p>
                 </div>
                 {% endfor %}
             </ul>
         </div>
         <div class="see-more">
-            <h2><a href="/add">See more</a></h2>
+            <h2><a href="/postlist">See more</a></h2>
         </div>
     </div>
 {% endblock %}
